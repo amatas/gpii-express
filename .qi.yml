@@ -6,11 +6,11 @@ env_runtime: linux-desktop
 
 apps:
   - app_name: gpii-express
-    git_repository: https://github.com/the-t-in-rtf/gpii-express.git
-    git_branch: GPII-1985
     software_stack: nodejs
+    nodejs_app_git_clone: false # Sorry, this variable should be renamed
     folder:
       dest: /app/gpii-express
+      src: .
     run_in: fedora
     deploy: false
     setup:
